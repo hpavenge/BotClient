@@ -82,5 +82,12 @@
     "botchat.css",
     "botchat.js",
     "CognitiveServices.js"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/Microsoft/BotFramework-WebChat/issues"
+  },
+  "homepage": "https://github.com/Microsoft/BotFramework-WebChat#readme",
+  "directories": {
+    "test": "test"
+  }
 }
