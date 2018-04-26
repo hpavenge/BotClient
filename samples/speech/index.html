@@ -31,7 +31,6 @@
     <link href="../../botchat.css" rel="stylesheet" />
     <!-- Section push -->
 
-
     <style>
       .example {
         float: left;
@@ -92,9 +91,9 @@
 
       const user = {
         id: params['userid'] || 'userid',
-        name: 'wesley'
+          name: params['username'] || 'username'
       };
-
+      // name: 'wesley'
       const bot = {
         id: params['botid'] || 'botid',
         name: params['botname'] || 'botname'
