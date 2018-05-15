@@ -5386,7 +5386,7 @@ var Speech;
             SpeechRecognizer.instance = recognizer;
         };
         SpeechRecognizer.startRecognizing = function (locale, onIntermediateResult, onFinalResult, onAudioStreamStarted, onRecognitionFailed) {
-            if (locale === void 0) { locale = 'en-US'; }
+            if (locale === void 0) { locale = 'nl-NL'; }
             if (onIntermediateResult === void 0) { onIntermediateResult = null; }
             if (onFinalResult === void 0) { onFinalResult = null; }
             if (onAudioStreamStarted === void 0) { onAudioStreamStarted = null; }
@@ -5464,6 +5464,8 @@ var Speech;
             }
             this.recognizer = new window.webkitSpeechRecognition();
             this.recognizer.lang = 'nl-NL';
+            this.recognizer.language = 'nl-NL';
+            this.recognizer.languageCode = 'nl-NL';
             this.recognizer.interimResults = true;
             this.recognizer.onaudiostart = function () {
                 if (_this.onAudioStreamingToService) {
